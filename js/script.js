@@ -1,4 +1,4 @@
-setInterval(() => {
+function getSecondIntro(){
     const nav = document.querySelector('.nav');
     const introTitle = document.querySelector('.intro-title')
     const introboxtitle = document.querySelector('.intro-box-title')
@@ -13,9 +13,11 @@ setInterval(() => {
     introboxtitle.textContent = "Ferrari Purosangue"
     introTitle.textContent = "Unlike any other"
     nav.style.backgroundImage = `url("../images/introbg2.jpg")`
-}, 3000)
+}
 
-setInterval(() => {
+setInterval(getSecondIntro, 3000)
+
+function getThirdIntro(){
     const nav = document.querySelector('.nav');
     const introTitle = document.querySelector('.intro-title')
     const introButton = document.querySelector('.intro-button')
@@ -30,9 +32,11 @@ setInterval(() => {
     introButton.textContent = "YOUR OWN"
     introTitle.textContent = "NOW OR NEVER"
     nav.style.backgroundImage = `url("../images/introbg3.png")`
-}, 6000)
+}
 
-setInterval(() => {
+setInterval(getThirdIntro, 6000)
+
+function getFirstIntro(){
     const nav = document.querySelector('.nav');
     const introTitle = document.querySelector('.intro-title')
     const introButton = document.querySelector('.intro-button')
@@ -47,18 +51,9 @@ setInterval(() => {
     introButton.textContent = "DISCOVER"
     introTitle.textContent = "#ESSEREFERRARI"
     nav.style.backgroundImage = `url("../images/introbg.png")`
-}, 9000)
-
-let count = 0;
-
-function incrementCount() {
-  count++;
-  alert('Count is now:'+ count);
 }
 
-setInterval(incrementCount, 3000);
-
-  
+setInterval(getFirstIntro, 9000)
 
 if(screen.width > 600){
     const carouselContainer = document.querySelector('.carousel-container');
