@@ -1,0 +1,41 @@
+@keyframes cars-slide-in {
+    from {
+      transform: translateY(120px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes cars-slide-out {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(120px);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes cars-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes cars-fade-out {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0.5;
+      transform: scale(0.9);
+    }
+  }
