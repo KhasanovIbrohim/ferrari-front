@@ -49,9 +49,16 @@ setInterval(() => {
     nav.style.backgroundImage = `url("../images/introbg.png")`
 }, 9000)
 
+let count = 0;
 
+function incrementCount() {
+  count++;
+  alert('Count is now:'+ count);
+}
 
+setInterval(incrementCount, 3000);
 
+  
 
 if(screen.width > 600){
     const carouselContainer = document.querySelector('.carousel-container');
